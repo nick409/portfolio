@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Devansh — Computer Science Engineering Student &amp; Developer</title>
+<meta name="description" content="Devansh — CSE student, developer, and technology enthusiast. Projects in web development, IoT, and blockchain experimentation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============ CONFIG: edit these placeholders before publishing ============ -->
+<!--
+  YOUR_GITHUB_URL   -> replace with your GitHub profile URL
+  YOUR_LINKEDIN_URL -> replace with your LinkedIn profile URL
+  YOUR_EMAIL        -> replace with your real email address
+  YOUR_COLLEGE_NAME  -> replace with your actual college name
+  assets/resume.pdf -> add your resume file at this path
+  Project GitHub/demo links marked with # -> replace with real repo/demo URLs
+-->
+
+<div class="grain-overlay" aria-hidden="true"></div>
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="#home" class="nav-mark">D.</a>
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navDrawer" aria-label="Open menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navDrawer">
+      <li><a href="#about" data-nav>About</a></li>
+      <li><a href="#skills" data-nav>Toolkit</a></li>
+      <li><a href="#projects" data-nav>Projects</a></li>
+      <li><a href="#education" data-nav>Journey</a></li>
+      <li><a href="#contact" data-nav>Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============ HERO ============ -->
+  <section id="home" class="hero">
+    <div class="hero-grid">
+      <div class="hero-visual" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="orbit-svg">
+          <circle cx="200" cy="200" r="150" class="orbit-ring orbit-ring--a"/>
+          <circle cx="200" cy="200" r="110" class="orbit-ring orbit-ring--b"/>
+          <circle cx="200" cy="200" r="70" class="orbit-ring orbit-ring--c"/>
+          <g class="orbit-group orbit-group--a"><circle cx="350" cy="200" r="7" class="orbit-node"/></g>
+          <g class="orbit-group orbit-group--b"><circle cx="90" cy="200" r="5" class="orbit-node orbit-node--mint"/></g>
+          <g class="orbit-group orbit-group--c"><rect x="196" y="126" width="8" height="8" class="orbit-node orbit-node--coral" transform="rotate(45 200 130)"/></g>
+          <text x="200" y="208" text-anchor="middle" class="avatar-glyph">D</text>
+        </svg>
+      </div>
+      <div class="hero-copy">
+        <p class="hero-eyebrow">Computer Science Engineering Student / Developer / Technology Enthusiast</p>
+        <h1 class="hero-title" id="heroTitle">Devansh builds things to understand how they work.</h1>
+        <p class="hero-sub">A B.Tech CSE student who learns by building, breaking, and rebuilding — across web apps, embedded hardware, and blockchain experiments.</p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn--primary magnetic">Explore My Work</a>
+          <a href="assets/resume.pdf" class="btn btn--ghost magnetic" download>Download Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/nick409/" target="_blank" rel="noopener">GitHub</a>
+          <span class="dot-sep" aria-hidden="true">/</span>
+          <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true"><span></span>scroll</div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section id="about" class="section about">
+    <div class="section-head reveal">
+      <h2>About</h2>
+    </div>
+    <div class="about-grid">
+      <p class="about-lead reveal">Currently pursuing a B.Tech in Computer Science Engineering at <span class="editable">Indore institue of science and technology</span>, India. Most of what Devansh knows didn't come from a syllabus — it came from taking things apart, reading documentation at 1am, and shipping small, imperfect versions of ideas until they worked.</p>
+      <div class="about-cards">
+        <div class="about-card reveal">
+          <h3>Curiosity-driven</h3>
+          <p>Interested in how software, networks, and hardware actually fit together — not just how to use them.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Build-first mindset</h3>
+          <p>Prefers a working prototype over a polished plan. Debugging is part of the process, not a detour from it.</p>
+        </div>
+        <div class="about-card reveal">
+          <h3>Where this is going</h3>
+          <p>Working toward becoming a capable software developer who can turn rough ideas into useful, working products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ SKILLS ============ -->
+  <section id="skills" class="section skills">
+    <div class="section-head reveal">
+      <h2>Toolkit</h2>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-group reveal">
+        <h3>Programming</h3>
+        <ul class="tag-list">
+          <li class="tag">C</li><li class="tag">C++</li><li class="tag">Java</li><li class="tag">Python</li><li class="tag">JavaScript</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Web</h3>
+        <ul class="tag-list">
+          <li class="tag">HTML5</li><li class="tag">CSS3</li><li class="tag">JavaScript</li><li class="tag">Next.js</li><li class="tag">TypeScript</li><li class="tag">Tailwind CSS</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Backend &amp; Data</h3>
+        <ul class="tag-list">
+          <li class="tag">Firebase Auth</li><li class="tag">Firestore</li><li class="tag">SQL</li>
+        </ul>
+      </div>
+      <div class="skill-group reveal">
+        <h3>Tools &amp; Hardware</h3>
+        <ul class="tag-list">
+          <li class="tag">Git</li><li class="tag">GitHub</li><li class="tag">VS Code</li><li class="tag">Solidity</li><li class="tag">Hardhat</li><li class="tag">Ethereum</li><li class="tag">Raspberry Pi</li><li class="tag">ESP8266</li><li class="tag">Arduino</li><li class="tag">IoT</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROJECTS ============ -->
+  <section id="projects" class="section projects">
+    <div class="section-head reveal">
+      <h2>Selected Projects</h2>
+      <div class="filters" role="group" aria-label="Filter projects by category">
+        <button class="filter-btn is-active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="web">Web</button>
+        <button class="filter-btn" data-filter="iot">IoT</button>
+        <button class="filter-btn" data-filter="blockchain">Blockchain</button>
+      </div>
+    </div>
+
+    <div class="project-grid">
+
+      <article class="project-card project-card--feature reveal" data-category="web" tabindex="0">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 200" class="project-svg">
+            <rect x="10" y="10" width="300" height="180" rx="4" class="svg-frame"/>
+            <rect x="26" y="26" width="90" height="148" rx="2" class="svg-panel"/>
+            <rect x="130" y="26" width="164" height="68" rx="2" class="svg-panel svg-panel--mint"/>
+            <rect x="130" y="104" width="78" height="70" rx="2" class="svg-panel"/>
+            <rect x="216" y="104" width="78" height="70" rx="2" class="svg-panel svg-panel--coral"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Featured — Academic Platform</p>
+          <h3>G Class Advance</h3>
+          <p class="project-desc">A classroom management platform with distinct teacher and student experiences — dashboards, courses, assignments, grades, attendance, and timetables, with role-based access control. An ongoing independent build, not a finished product.</p>
+          <p class="project-challenge"><strong>Challenge:</strong> keeping two very different user roles (teacher, student) cleanly separated in the same codebase while sharing a single Firestore data model.<br><strong>Approach:</strong> role-based routing and access rules on top of Firebase Auth, with Firestore collections structured around courses rather than roles.</p>
+          <ul class="tag-list tag-list--tech">
+            <li class="tag tag--tech">Next.js 15</li><li class="tag tag--tech">TypeScript</li><li class="tag tag--tech">Tailwind CSS</li><li class="tag tag--tech">Firebase Auth</li><li class="tag tag--tech">Firestore</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+            <a href="#" class="project-link">Live Demo ↗</a>
+            <button class="project-link project-expand" data-modal="modal-gclass">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="iot" tabindex="0">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 200" class="project-svg">
+            <rect x="24" y="60" width="60" height="80" rx="3" class="svg-panel"/>
+            <rect x="120" y="40" width="80" height="60" rx="3" class="svg-panel svg-panel--mint"/>
+            <circle cx="250" cy="70" r="26" class="svg-panel svg-panel--coral"/>
+            <path d="M84 100 H120 M200 70 H224" class="svg-line"/>
+            <path d="M160 100 V160 M70 140 V160 H250 V160" class="svg-line svg-line--dash"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">IoT Prototype</p>
+          <h3>Thermal Server Watchdog</h3>
+          <p class="project-desc">An IoT cube that monitors temperature and humidity around a server or equipment rack, shows live status on an OLED display, and pushes remote alerts over Wi-Fi.</p>
+          <p class="project-challenge"><strong>Challenge:</strong> getting a Pico, an ESP8266, a DHT11 sensor, and an SSD1306 OLED to talk reliably over I2C/UART without a reliable power supply.<br><strong>Approach:</strong> isolated sensor polling from display refresh, and offloaded notifications to ntfy over Wi-Fi instead of running a server on-device.</p>
+          <ul class="tag-list tag-list--tech">
+            <li class="tag tag--tech">Raspberry Pi Pico</li><li class="tag tag--tech">ESP8266</li><li class="tag tag--tech">DHT11</li><li class="tag tag--tech">SSD1306 OLED</li><li class="tag tag--tech">Arduino/C++</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+            <button class="project-link project-expand" data-modal="modal-thermal">Details</button>
+          </div>
+        </div>
+      </article>
+
+      <article class="project-card reveal" data-category="blockchain" tabindex="0">
+        <div class="project-visual" aria-hidden="true">
+          <svg viewBox="0 0 320 200" class="project-svg">
+            <g class="svg-line">
+              <line x1="60" y1="60" x2="160" y2="40"/><line x1="160" y1="40" x2="260" y2="80"/>
+              <line x1="60" y1="60" x2="80" y2="150"/><line x1="160" y1="40" x2="160" y2="140"/>
+              <line x1="260" y1="80" x2="240" y2="150"/><line x1="80" y1="150" x2="160" y2="140"/>
+              <line x1="160" y1="140" x2="240" y2="150"/>
+            </g>
+            <circle cx="60" cy="60" r="10" class="svg-panel svg-panel--mint"/>
+            <circle cx="160" cy="40" r="10" class="svg-panel"/>
+            <circle cx="260" cy="80" r="10" class="svg-panel svg-panel--coral"/>
+            <circle cx="80" cy="150" r="10" class="svg-panel"/>
+            <circle cx="160" cy="140" r="10" class="svg-panel svg-panel--mint"/>
+            <circle cx="240" cy="150" r="10" class="svg-panel"/>
+          </svg>
+        </div>
+        <div class="project-body">
+          <p class="project-kicker">Learning / Experiments</p>
+          <h3>Smart Contract Experiments</h3>
+          <p class="project-desc">Hands-on experiments with Solidity and Hardhat: writing and compiling contracts, running a local Ethereum-compatible chain, deploying and interacting with contracts, and exploring Sepolia testnet deployment.</p>
+          <p class="project-challenge"><strong>Challenge:</strong> understanding gas, state, and transaction ordering by reading about them only gets you so far.<br><strong>Approach:</strong> rebuilt the same simple contracts repeatedly — locally, then on testnet — to see how deployment and state actually behave.</p>
+          <ul class="tag-list tag-list--tech">
+            <li class="tag tag--tech">Solidity</li><li class="tag tag--tech">Hardhat</li><li class="tag tag--tech">Ethereum</li><li class="tag tag--tech">Sepolia</li>
+          </ul>
+          <div class="project-links">
+            <a href="#" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ============ EDUCATION ============ -->
+  <section id="education" class="section education">
+    <div class="section-head reveal">
+      <h2>Learning Journey</h2>
+    </div>
+    <div class="edu-row reveal">
+      <div class="edu-mark" aria-hidden="true"></div>
+      <div class="edu-body">
+        <h3>B.Tech, Computer Science Engineering</h3>
+        <p class="editable">IIST</p>
+        <p class="edu-note">Core coursework alongside independent projects in web development, embedded systems, and blockchain — the two tracks tend to feed each other.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section id="contact" class="section contact">
+    <div class="section-head reveal">
+      <h2>Contact</h2>
+      <p class="contact-sub">Have a project, an opportunity, or just want to talk shop? Reach out.</p>
+    </div>
+    <form class="contact-form reveal" id="contactForm" novalidate>
+      <div class="form-row">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required autocomplete="name">
+        <span class="field-error" data-error-for="name"></span>
+      </div>
+      <div class="form-row">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required autocomplete="email">
+        <span class="field-error" data-error-for="email"></span>
+      </div>
+      <div class="form-row">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+        <span class="field-error" data-error-for="message"></span>
+      </div>
+      <button type="submit" class="btn btn--primary magnetic">Send Message</button>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </form>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>© <span id="year"></span> Devansh. Built with HTML, CSS &amp; JavaScript — no framework required.</p>
+  <div class="footer-links">
+    <a href="https://github.com/nick409/" target="_blank" rel="noopener">GitHub</a>
+    <a href="YOUR_LINKEDIN_URL" target="_blank" rel="noopener">LinkedIn</a>
+    <a href="mailto:YOUR_EMAIL">Email</a>
+  </div>
+</footer>
+
+<!-- ============ MODALS ============ -->
+<div class="modal-backdrop" id="modal-gclass" data-modal-root>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-gclass-title">
+    <button class="modal-close" data-modal-close aria-label="Close dialog">✕</button>
+    <h3 id="modal-gclass-title">G Class Advance</h3>
+    <p><strong>Implemented so far:</strong> teacher and student dashboards, course listing, assignment and grade views, attendance/student management, timetable display, role-based access between teacher and student accounts.</p>
+    <p><strong>Not yet built (ideas, not features):</strong> AI-generated quizzes, a companion Android app. These are future directions, not shipped functionality.</p>
+  </div>
+</div>
+<div class="modal-backdrop" id="modal-thermal" data-modal-root>
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-thermal-title">
+    <button class="modal-close" data-modal-close aria-label="Close dialog">✕</button>
+    <h3 id="modal-thermal-title">Thermal Server Watchdog</h3>
+    <p>A Raspberry Pi Pico reads temperature and humidity from a DHT11 sensor and drives a 128×64 SSD1306 OLED over I2C to show live status. An ESP8266 handles Wi-Fi connectivity and sends alert notifications through ntfy when thresholds are crossed. A relay allows basic automated response to overheating conditions.</p>
+    <p>This is a working prototype built for learning embedded systems and network communication — not a deployed production monitoring system.</p>
+  </div>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
